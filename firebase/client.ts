@@ -1,8 +1,11 @@
 // Import the functions you need from the SDKs you need
+
+"use client";
 import { initializeApp, getApps } from "firebase/app";
 import { Auth } from "firebase/auth";
 import { FirebaseStorage } from "firebase/storage";
-import { get } from "http";
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
