@@ -14,10 +14,12 @@ export default function AuthButtons() {
       )}
 
       {!auth?.currentUser && (
-        <>
-          <Link href="/login">login</Link>
-          <Link href="/register">register</Link>
-        </>
+        <div className="flex gap-2 items-center ">
+          <Link href="/login" className = "tracking-widest hover:underline">Login</Link>
+
+          <div className="h-8 w-[1px] bg-white/50 rounded-full"></div>
+          <Link href="/register" className = "tracking-widest hover:underline">SignUp</Link>
+        </div>
       )}
     </div>
   );
