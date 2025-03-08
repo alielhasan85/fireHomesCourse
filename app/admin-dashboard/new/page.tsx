@@ -7,21 +7,23 @@ export default function NewProperty() {
     <div>
       <Breadcrumbs
         items={[
-          { href: "/admin-dashboard", label: "Dashboard" },
-          { label: "New Property" },
+          {
+            href: "/admin-dashboard",
+            label: "Dashboard",
+          },
+          {
+            label: "New Property",
+          },
         ]}
-      ></Breadcrumbs>
-
+      />
       <Card className="mt-5">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold"> New Property</CardTitle>
+          <CardTitle className="text-3xl font-bold">New Property</CardTitle>
         </CardHeader>
-
         <CardContent>
           <NewPropertyForm />
         </CardContent>
       </Card>
-      
     </div>
   );
 }

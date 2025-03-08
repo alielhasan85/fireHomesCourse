@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AuthProvider } from "@/context/auth";
 import AuthButtons from "@/components/auth-buttons";
 import { HomeIcon } from "lucide-react";
+import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -50,6 +51,7 @@ export default function RootLayout({
             </ul>
           </nav>
           {children}
+          <Toaster />
         </AuthProvider>
       </body>
     </html>
