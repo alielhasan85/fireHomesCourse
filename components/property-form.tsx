@@ -53,7 +53,7 @@ export default function PropertyForm({
       <form onSubmit={form.handleSubmit(handleSubmit)}>
         <div className="grid grid-cols-2 gap-4">
           <fieldset
-            className="flex flex-col gap-2"
+            className="flex flex-col gap-4"
             disabled={form.formState.isSubmitting}
           >
             <FormField
@@ -141,7 +141,7 @@ export default function PropertyForm({
           </fieldset>
 
           <fieldset
-            className="flex flex-col gap-2"
+            className="flex flex-col gap-4"
             disabled={form.formState.isSubmitting}
           >
             <FormField
@@ -201,7 +201,7 @@ export default function PropertyForm({
         </div>
         <Button
           type="submit"
-          className="max-w-md mx-auto w-full mt-2 flex gap-2"
+          className="max-w-md mx-auto w-full mt-8 flex gap-4"
           disabled={form.formState.isSubmitting}
         >
           {submitButtonLabel}
